@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3640;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  h2 {
+    color: #ab444b;
+    margin-top: 40px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  table th, table td {
+    border: 1px solid #dcdde1;
+    padding: 12px;
+    text-align: left;
+  }
+
+  table th {
+    background-color: #182026;
+    color: #fff;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #f1f2f6;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+  }
+
+  form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  form textarea {
+    resize: vertical;
+  }
+
+  form button {
+    background-color: #40739e;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  form button:hover {
+    background-color: #2f3640;
+  }
+
+</style>
+
+</head>
+<body dir="ltr">
+    <h1>My Personal Website</h1>
+
+<h2>About Me :</h2>
+
+<p>
+I am a Computer Engineering graduate who is passionate about programming.
+Programming has become one of my favorite hobbies, and I am highly motivated
+to improve my skills and grow as a developer.
+My goal is to become a professional programmer in the future.
+</p>
+
+<h3>Personal Goal</h3>
+
+</h1>
+
+<h2>Technical Skills :</h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>C#</li>
+  <li>C++</li>
+</ul>
+
+<h2>Goals and Achievements :</h2>
+<ol>
+  <li>Graduated from the Computer Engineering department</li>
+  <li>Improving my programming skills continuously</li>
+  <li>Building real projects to gain practical experience</li>
+  <li>Becoming a professional programmer</li>
+</ol>
+
+<img src="imge.jpg" alt="Personal photo" width="500px">
+<br/>
+<h2>Relaxing Music ^.^ </h2>
+
+<iframe
+  width="500px"
+  height="300px"
+  src="https://www.youtube.com/embed/tCe5nme9FEs&list"
+  title="Relaxing Piano Music"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+<h2>My Links :</h2>
+
+<a href="https://github.com/dashboard" target="_blank" text-decoration="none">
+  Visit my GitHub
+</a>
+<br/>
+<br/>
+<br/>
+<a href="#contact">
+  Go to Contact Section
+</a>
+
+<h2>Educational & Practical Experience :</h2>
+
+<table border="2px" cellpadding="10px">
+  <tr>
+    <th>Year</th>
+    <th>Institution / Place</th>
+    <th>Role / Activity</th>
+  </tr>
+  <tr>
+    <td>2019 - 2023</td>
+    <td>Al-Mustansiriya University</td>
+    <td>Bachelor's in Computer Engineering</td>
+  </tr>
+  <tr>
+    <td>2022</td>
+    <td>Personal Projects</td>
+    <td>Developed projects using HTML, CSS, JavaScript, C#, C++</td>
+  </tr>
+  <tr>
+    <td>2023</td>
+    <td>Internship / Training</td>
+    <td>Applied programming skills in real-world scenarios</td>
+  </tr>
+</table>
+
+<form action="#" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+  <label for="reason">Reason for Contact:</label><br>
+  <select id="reason" name="reason" required>
+    <option value="">--Select--</option>
+    <option value="inquiry">General Inquiry</option>
+    <option value="project">Project Collaboration</option>
+    <option value="feedback">Feedback / Suggestions</option>
+    <option value="other">Other</option>
+  </select><br><br>
+
+  <button type="submit">Send Message</button>
+</form>
+
+
+<h2 id="contact">Contact Me</h2>
+
+
+</body>
+</html>
