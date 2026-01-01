@@ -5,35 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
 
-    <style>
+<style>
   body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f6fa;
-    color: #2f3640;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.7;
     padding: 20px;
   }
 
-  h2 {
-    color: #ab444b;
-    margin-top: 40px;
+  h1, h2, h3 {
+    color: #1e272e;
+  }
+
+  a {
+    color: #40739e;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #40739e;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+
+  a:hover {
+    color: #2f3640;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+
+  button {
+    background-color: #40739e;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  button:hover {
+    background-color: #2f3640;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
   }
 
   table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
   }
 
   table th, table td {
-    border: 1px solid #dcdde1;
-    padding: 12px;
+    padding: 14px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
   }
 
   table th {
-    background-color: #182026;
+    background-color: #40739e;
     color: #fff;
   }
 
@@ -43,51 +90,32 @@
 
   form {
     background-color: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     max-width: 600px;
+    margin-bottom: 50px;
   }
 
-  form label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  form input[type="text"],
-  form input[type="email"],
-  form textarea,
-  form select {
+  form input, form textarea, form select {
     width: 100%;
-    padding: 10px 12px;
+    padding: 12px 15px;
     margin-bottom: 20px;
     border: 1px solid #dcdde1;
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 16px;
     box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
   }
 
-  form textarea {
-    resize: vertical;
-  }
-
-  form button {
-    background-color: #40739e;
-    color: #fff;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  form button:hover {
-    background-color: #2f3640;
+  form input:focus, form textarea:focus, form select:focus {
+    border-color: #40739e;
+    box-shadow: 0 0 6px rgba(64, 115, 158, 0.5);
+    outline: none;
   }
 
 </style>
+
 
 </head>
 <body dir="ltr">
@@ -139,7 +167,7 @@ My goal is to become a professional programmer in the future.
 
 <h2>My Links :</h2>
 
-<a href="https://github.com/dashboard" target="_blank" text-decoration="none">
+<a href="https://github.com/dashboard" target="_blank" style="text-decoration: none;">
   Visit my GitHub
 </a>
 <br/>
