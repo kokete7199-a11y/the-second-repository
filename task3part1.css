@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+   grid-template-columns: repeat(3, 400px);
+  gap: 30px;
+  padding:100px;
+  justify-content: center;
+}
+
+.square {
+  background-color: #d9d9d9;
+  height: 240px;
+}
