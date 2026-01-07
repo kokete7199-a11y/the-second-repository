@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "box1 box2 "
+    "box1 box3 "
+ ;
+  gap: 30px;
+  padding: 100px;
+}
+
+.box1 {
+  grid-area: box1;
+  background-color: #d9d9d9;
+ 
+}
+
+.box2 {
+  grid-area: box2;
+  background-color: #d9d9d9;
+  height: 240px;
+}
+
+.box3 {
+  grid-area: box3;
+  background-color: #d9d9d9;
+  height: 300px;
+}
