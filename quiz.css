@@ -185,3 +185,62 @@ body {
     height: 200px;
   }
 }
+
+
+.menu a{
+  position: relative;
+  transition: color .3s ease;
+}
+
+.menu a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:2px;
+  background:#0f1b3d;
+  transition: width .3s ease;
+}
+
+.menu a:hover{
+  color:#14203E;
+}
+
+.menu a:hover::after{
+  width:100%;
+}
+
+
+.login,
+.trial{
+  cursor:pointer;
+  transition: all .3s ease;
+}
+
+.login:hover{
+  background:#e8dfd3;
+  transform: translateY(-2px);
+}
+
+.trial:hover{
+  transform: translateY(-2px);
+  box-shadow:0 10px 25px rgba(15,27,61,.25);
+}
+
+.login:active,
+.trial:active{
+  transform: scale(.95);
+}
+
+
+.hero-btn{
+  transition: all .35s ease;
+}
+
+.hero-btn:hover{
+  transform: translateY(-3px);
+  box-shadow:0 14px 30px rgba(15,27,61,.35);
+}
+
+
